@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 
 namespace PlantDiary002.Pages
 {
@@ -11,7 +7,10 @@ namespace PlantDiary002.Pages
     {
         public void OnGet()
         {
-
+            String myName = "Brandan Jones";
+            int age = 29;
+            ViewData["MyName"] = myName;
+            ViewData["Age"] = age;
         }
     }
 }
